@@ -163,18 +163,14 @@ Kali Linux is used as the primary cybersecurity platform for performing network 
 
 The Kali Linux virtual machine is configured to use the NAT Network created in Step 3.
 
-### Procedure
+### Network Configuration
 
-1. Open **Oracle VirtualBox**.
-2. Select the **Kali Linux** virtual machine.
-3. Click **Settings → Network**.
-4. Enable **Adapter 1**.
-5. Set **Attached to** as **NAT Network**.
-6. Select the previously created NAT Network.
-7. Click **OK** to save the configuration.
-8. Start the Kali Linux virtual machine.
-9. Open the Kali Linux terminal.
-10. Check the assigned IP address.
+```text
+IP Address: 10.10.10.20
+Netmask: /24
+Gateway: 10.10.10.10
+DNS Server: 8.8.8.8
+```
 
 ![Kali Linux Network Configuration](![Uploading Screenshot 2026-08-12 143039.png…]()
 )
