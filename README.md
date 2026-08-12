@@ -150,9 +150,8 @@ The Kali Linux virtual machine is imported into Oracle VirtualBox after extracti
 8. Click **Import**.
 9. Wait for the import process to complete.
 10. Verify that the Kali Linux virtual machine appears in VirtualBox Manager.
-    
-![Kali Linux Import](<img width="1714" height="872" alt="Screenshot 2026-08-12 142746" src="https://github.com/user-attachments/assets/2a1ab653-d8e7-4c67-a30a-6fe052959fe3" />
-)
+11. 
+![Kali Linux Network Configuration](/kali-network.png)
 ### Purpose
 
 Kali Linux is used as the primary cybersecurity platform for performing network analysis, security testing, and other authorized cybersecurity lab activities.
@@ -172,8 +171,8 @@ Gateway: 10.10.10.10
 DNS Server: 8.8.8.8
 ```
 
-![Kali Linux Network Configuration](![Uploading Screenshot 2026-08-12 143039.png…]()
-)
+![Kali Linux Network Configuration](/kali-network.png)
+
 
 ## Step 6: Create a Clean VM Snapshot
 
