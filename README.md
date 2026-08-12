@@ -134,308 +134,81 @@ Oracle VirtualBox is installed to create and manage the virtual machines require
 A dedicated NAT Network is created in VirtualBox to provide network connectivity for the cybersecurity lab.
 ### NAT Network Configuration
 
+## Step 4: Import Kali Linux
 
+The Kali Linux virtual machine is imported into Oracle VirtualBox after extracting the downloaded Kali Linux files.
 
-### Learning Outcomes
+### Procedure
 
-* Host discovery
-* Port scanning
-* Service identification
-* Basic enumeration
-* Understanding network exposure
+1. Extract the downloaded Kali Linux archive using **7-Zip**.
+2. Open **Oracle VirtualBox**.
+3. Click **File → Import Appliance**.
+4. Browse to the extracted Kali Linux appliance file.
+5. Select the Kali Linux appliance.
+6. Review the virtual machine configuration.
+7. Select the required storage location.
+8. Click **Import**.
+9. Wait for the import process to complete.
+10. Verify that the Kali Linux virtual machine appears in VirtualBox Manager.
 
----
+### Purpose
 
-# 📡 3. Packet Analysis with Wireshark
-
-Wireshark is used to capture and analyze network traffic.
-
-The lab demonstrates:
-
-* Packet capture
-* TCP/IP analysis
-* DNS traffic
-* HTTP/HTTPS traffic
-* TCP handshake
-* Protocol identification
-
-Useful filters:
-
-```text
-ip.addr == <LAB-IP>
-```
-
-```text
-tcp
-```
-
-```text
-dns
-```
-
-```text
-http
-```
+Kali Linux is used as the primary cybersecurity platform for performing network analysis, security testing, and other authorized cybersecurity lab activities.
 
 ---
 
-# 🌐 4. Web Security Testing with Burp Suite
+## Step 5: Configure the Kali Linux Network
 
-Burp Suite is used for authorized web application security testing.
+The Kali Linux virtual machine is configured to use the NAT Network created in Step 3.
 
-The lab covers:
+### Procedure
 
-* HTTP requests and responses
-* Proxy configuration
-* Request interception
-* HTTP headers
-* Parameters
-* Cookies
-* Basic web security testing
+1. Open **Oracle VirtualBox**.
+2. Select the **Kali Linux** virtual machine.
+3. Click **Settings → Network**.
+4. Enable **Adapter 1**.
+5. Set **Attached to** as **NAT Network**.
+6. Select the previously created NAT Network.
+7. Click **OK** to save the configuration.
+8. Start the Kali Linux virtual machine.
+9. Open the Kali Linux terminal.
+10. Check the assigned IP address.
 
-All testing is performed against intentionally vulnerable or authorized applications.
 
----
+## Step 6: Create a Clean VM Snapshot
 
-# 💥 5. Metasploit Framework
+After completing the Kali Linux installation and network configuration, a clean snapshot of the virtual machine is created.
 
-Metasploit is used to understand vulnerability exploitation in a controlled lab.
+### Purpose
 
-The lab focuses on:
+The main purpose of creating a clean snapshot is to maintain a stable restore point for the cybersecurity lab.
 
-* Vulnerability research
-* Exploit modules
-* Payload concepts
-* Sessions
-* Post-exploitation concepts
-* Security remediation
-
-Example:
-
-```bash
-msfconsole
-```
+During future lab exercises, different security tools, configurations, and testing activities may modify the virtual machine. If any unwanted changes, configuration errors, or software issues occur, the virtual machine can be restored to this clean snapshot.
 
 ---
 
-# 📊 6. Splunk SIEM Setup
-
-Splunk is configured for security monitoring and log analysis.
-
-The environment can include:
-
-```text
-Windows Machine
-      │
-      │ Logs
-      ▼
-Splunk Universal Forwarder
-      │
-      ▼
-Splunk Enterprise
-      │
-      ▼
-Search / Analysis / Detection
-```
-
-### Activities
-
-* Installing Splunk
-* Configuring Universal Forwarder
-* Collecting logs
-* Searching events
-* Creating basic dashboards
-* Detecting suspicious activity
-* Investigating security events
-
 ---
+## 📚 What I Learned
 
-# 🖥️ 7. Windows Security Monitoring
+Through this Cybersecurity Setup Lab, I learned how to build and configure a basic virtual cybersecurity environment using Oracle VirtualBox and Kali Linux.
 
-Windows logs are collected and analyzed to understand security events.
+### Key Learning Outcomes
 
-Important logs include:
+- Learned how to install and use **7-Zip** to extract virtual machine files.
+- Learned how to install and configure **Oracle VirtualBox**.
+- Learned how to create and configure a **NAT Network** in VirtualBox.
+- Learned how to import a **Kali Linux virtual machine** into VirtualBox.
+- Learned how to configure the **Kali Linux network adapter**.
+- Learned how to check IP addresses and network configuration using Linux commands.
+- Learned how to verify network connectivity from Kali Linux.
+- Learned how to create a **clean VM snapshot**.
+- Learned how snapshots can be used to restore a virtual machine to a stable state.
+- Gained practical experience in building a **controlled and isolated cybersecurity lab environment**.
+- Understood the importance of maintaining a clean and repeatable lab environment before performing security testing.
 
-* Windows Security Events
-* System Events
-* Application Events
+### Overall Learning
 
-Example security investigation areas:
-
-* Failed login attempts
-* Successful authentication
-* Account activity
-* Process activity
-* Network-related events
-
----
-
-# 🌐 8. Cisco Packet Tracer
-
-Cisco Packet Tracer is used to understand network architecture and security fundamentals.
-
-The lab covers:
-
-* Routers
-* Switches
-* PCs
-* IP addressing
-* Subnetting
-* VLAN concepts
-* Routing
-* Network troubleshooting
-* Basic network security
-
----
-
-# 🧪 Practical Exercises
-
-The repository may contain practical exercises such as:
-
-### Exercise 1 — Network Discovery
-
-Identify active hosts in the authorized lab network.
-
-### Exercise 2 — Port Scanning
-
-Identify open ports and running services.
-
-### Exercise 3 — Packet Capture
-
-Capture and analyze network traffic using Wireshark.
-
-### Exercise 4 — Web Traffic Analysis
-
-Intercept authorized HTTP requests using Burp Suite.
-
-### Exercise 5 — Vulnerability Assessment
-
-Identify potential vulnerabilities in intentionally vulnerable lab systems.
-
-### Exercise 6 — Log Analysis
-
-Collect and analyze Windows security logs using Splunk.
-
-### Exercise 7 — Threat Detection
-
-Create basic searches to identify suspicious authentication activity.
-
-### Exercise 8 — Network Troubleshooting
-
-Analyze connectivity and routing issues using Packet Tracer.
-
----
-
-# 📁 Repository Structure
-
-```text
-Cybersecurity-Setup-Lab/
-│
-├── README.md
-│
-├── Architecture/
-│   ├── lab-architecture.png
-│   └── network-diagram.png
-│
-├── Kali-Linux/
-│   ├── setup.md
-│   └── commands.md
-│
-├── Nmap/
-│   ├── scanning.md
-│   └── screenshots/
-│
-├── Wireshark/
-│   ├── packet-analysis.md
-│   └── screenshots/
-│
-├── Burp-Suite/
-│   ├── setup.md
-│   └── screenshots/
-│
-├── Metasploit/
-│   ├── lab-notes.md
-│   └── screenshots/
-│
-├── Splunk/
-│   ├── installation.md
-│   ├── configuration.md
-│   ├── queries.md
-│   └── screenshots/
-│
-├── Windows-Security/
-│   ├── event-logs.md
-│   └── screenshots/
-│
-├── Packet-Tracer/
-│   ├── topology.pkt
-│   └── documentation.md
-│
-└── Documentation/
-    └── lab-report.md
-```
-
----
-
-# 📸 Screenshots
-
-Screenshots can be added to document the setup and results.
-
-Recommended screenshots:
-
-* Kali Linux setup
-* Network configuration
-* Nmap scan
-* Wireshark packet capture
-* Burp Suite interface
-* Metasploit console
-* Splunk dashboard
-* Windows Event Viewer
-* Cisco Packet Tracer topology
-
-Example:
-
-```markdown
-![Nmap Scan](Screenshots/nmap-scan.png)
-```
-
----
-
-# 📚 Skills Demonstrated
-
-This project demonstrates practical knowledge of:
-
-* Cybersecurity Fundamentals
-* Network Security
-* Linux
-* Windows Security
-* Network Scanning
-* Vulnerability Assessment
-* Packet Analysis
-* Web Security
-* SIEM
-* Log Analysis
-* Threat Detection
-* Incident Investigation
-* Network Troubleshooting
-* Security Monitoring
-
----
-
-# 🎓 Learning Outcomes
-
-After completing this lab, I gained practical understanding of:
-
-1. Building a cybersecurity lab environment.
-2. Configuring security-focused virtual machines.
-3. Performing authorized network reconnaissance.
-4. Analyzing network packets.
-5. Understanding web application traffic.
-6. Working with security testing frameworks.
-7. Collecting and analyzing security logs.
-8. Understanding basic SIEM operations.
-9. Investigating authentication and network events.
-10. Applying cybersecurity concepts in a controlled environment.
+This lab helped me understand the basic process of setting up a virtual cybersecurity environment and prepared the lab for further practical activities such as network scanning, vulnerability assessment, packet analysis, and security testing.
 
 ---
 
@@ -448,44 +221,29 @@ All scanning, exploitation, packet capture, and security testing should be perfo
 Never use this lab or its techniques to access unauthorized systems.
 
 ---
+## 🛠️ Tools and Resources
 
-# 🚀 Future Improvements
+The following tools and resources were used to build and configure the Cybersecurity Setup Lab.
 
-Planned improvements include:
+### 💻 Virtualization & System Tools
 
-* Adding Active Directory lab
-* Adding Windows Server
-* Integrating Sysmon
-* Creating additional Splunk dashboards
-* Adding Sigma detection rules
-* Adding IDS/IPS monitoring
-* Adding Wazuh
-* Creating SOC investigation scenarios
-* Adding incident-response exercises
-* Automating lab deployment
-* Adding vulnerability-management workflows
+- **7-Zip** – https://7-zip.org/download.html 
+- **Oracle VirtualBox** – https://virtualbox.org/wiki/Downloads 
+- **Kali Linux** –  https://kali.org/get-kali 
 
 ---
 
 # 👨‍💻 Author
 
 **Ujjwal Patidar**
-
-B.Tech Computer Science Student
-
-### Areas of Interest
-
-* Cybersecurity
-* Network Security
-* SOC Operations
-* Vulnerability Assessment
-* SIEM & Log Analysis
-* Network Engineering
-
----
+CyberSecurity B082
+LinkedIn: https://www.linkedin.com/in/ujjwal-patidar-752114298
 
 ## ⭐ Repository
 
 If you find this project useful for learning cybersecurity, consider giving the repository a ⭐.
 
 **Built for learning. Tested in a controlled lab. Secured by knowledge. 🔐**
+
+### 📌 Project Objective
+**Program Name:** Cybersecurity at Networkwalks |**Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup |**Repository:** Github
