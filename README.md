@@ -237,7 +237,8 @@ The following tools and resources were used to build and configure the Cybersecu
 
 **Ujjwal Patidar**
 CyberSecurity B082
-LinkedIn: https://www.linkedin.com/in/ujjwal-patidar-752114298
+
+**LinkedIn:** https://www.linkedin.com/in/ujjwal-patidar-752114298
 
 ## ⭐ Repository
 
