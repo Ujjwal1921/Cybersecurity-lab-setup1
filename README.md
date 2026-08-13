@@ -1,10 +1,48 @@
-# 🔐 Cybersecurity Setup Lab
 
-A hands-on **Cybersecurity Lab Environment** designed for learning and practicing fundamental cybersecurity concepts, network security, vulnerability assessment, monitoring, and security testing.
 
-This project demonstrates the setup and configuration of a practical cybersecurity environment using tools such as **Kali Linux, Windows, Wireshark, Nmap, Burp Suite, Splunk, Metasploit, and Cisco Packet Tracer**.
 
----
+# 🛡️ Cybersecurity Lab Environment Setup
+
+<p align="center">
+
+![Cybersecurity](https://img.shields.io/badge/CYBERSECURITY-2563EB?style=for-the-badge)
+![Kali Linux](https://img.shields.io/badge/KALI%20LINUX-2563EB?style=for-the-badge)
+![VirtualBox](https://img.shields.io/badge/VIRTUALBOX-2563EB?style=for-the-badge)
+![Linux](https://img.shields.io/badge/LINUX-2563EB?style=for-the-badge)
+![Networking](https://img.shields.io/badge/NETWORKING-2563EB?style=for-the-badge)
+
+</p>
+
+<p align="center">
+
+![Network Security](https://img.shields.io/badge/NETWORK%20SECURITY-2563EB?style=for-the-badge)
+![Security Testing](https://img.shields.io/badge/SECURITY%20TESTING-2563EB?style=for-the-badge)
+![Virtualization](https://img.shields.io/badge/VIRTUALIZATION-2563EB?style=for-the-badge)
+![NAT Network](https://img.shields.io/badge/NAT%20NETWORK-2563EB?style=for-the-badge)
+![Ethical Hacking](https://img.shields.io/badge/ETHICAL%20HACKING-2563EB?style=for-the-badge)
+
+</p>
+
+<p align="center">
+
+![Network Analysis](https://img.shields.io/badge/NETWORK%20ANALYSIS-2563EB?style=for-the-badge)
+![Vulnerability Assessment](https://img.shields.io/badge/VULNERABILITY%20ASSESSMENT-2563EB?style=for-the-badge)
+![Penetration Testing](https://img.shields.io/badge/PENETRATION%20TESTING-2563EB?style=for-the-badge)
+![Threat Detection](https://img.shields.io/badge/THREAT%20DETECTION-2563EB?style=for-the-badge)
+![Incident Response](https://img.shields.io/badge/INCIDENT%20RESPONSE-2563EB?style=for-the-badge)
+
+</p>
+
+<p align="center">
+
+![Nmap](https://img.shields.io/badge/NMAP-2563EB?style=for-the-badge)
+![Wireshark](https://img.shields.io/badge/WIRESHARK-2563EB?style=for-the-badge)
+![Burp Suite](https://img.shields.io/badge/BURP%20SUITE-2563EB?style=for-the-badge)
+![Metasploit](https://img.shields.io/badge/METASPLOIT-2563EB?style=for-the-badge)
+![Splunk](https://img.shields.io/badge/SPLUNK-2563EB?style=for-the-badge)
+
+</p>
+
 ## 📌 Project Overview
 
 The **Cybersecurity Setup Lab** is a hands-on virtual laboratory environment designed for learning and practicing cybersecurity concepts in a controlled and isolated environment.
@@ -173,7 +211,7 @@ Gateway: 10.10.10.10
 DNS Server: 8.8.8.8
 ```
 
-![Kali Linux Network Configuration](/Screenshot2026-08-12143039.png.png)
+![Kali Linux Network Configuration](/nat-network.png.png)
 
 ## Step 6: Create a Clean VM Snapshot
 
